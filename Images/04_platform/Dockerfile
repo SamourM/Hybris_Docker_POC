@@ -1,4 +1,4 @@
-FROM y.i.hybrisserver
+FROM arunsingh1801/hybris-server:latest
 MAINTAINER axel.grossmann@hybris.de
 
 ADD hybrisServer/hybrisServer-*.zip /tmp/
