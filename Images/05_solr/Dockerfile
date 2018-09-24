@@ -1,4 +1,4 @@
-FROM y.i.base
+FROM arunsingh1801/hybris-base-os:latest
 MAINTAINER axel.grossmann@hybris.de
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
