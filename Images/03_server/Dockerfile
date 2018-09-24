@@ -1,4 +1,4 @@
-FROM y.i.tomcat
+FROM arunsingh1801/hyrbis-tomcat-base
 MAINTAINER axel.grossmann@hybris.de
 
 # admin files
