@@ -41,8 +41,8 @@ ENV TC_JMX_PORT 9003
 ENV TC_JMX_SERVER_PORT 9004
 
 # start command
-ADD startHybrisTomcat.sh /usr/local/bin/startHybrisTomcat
-RUN ["chmod", "+x", "/usr/local/bin/startHybrisTomcat/startHybrisTomcat.sh"]
+ADD startHybrisTomcat.sh /usr/local/bin/startHybrisTomcat.sh
+RUN ["chmod", "+x", "/usr/local/bin/startHybrisTomcat.sh"]
 # expected platform production package
 ENV PLATFORM_PACKAGE /hybrisServer
 
@@ -51,4 +51,4 @@ ENV CATALINA_JAVA_OPTS -Xms2G -Xmx2G -XX:MaxPermSize=300M -ea -Dcom.sun.manageme
 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false \
 -Dorg.tanukisoftware.wrapper.WrapperManager.mbean=true -Dfile.encoding=UTF-8
 
-CMD ["./usr/local/bin/startHybrisTomcat/startHybrisTomcat.sh"]
+CMD ["./usr/local/bin/startHybrisTomcat.sh"]
