@@ -15,4 +15,4 @@ RUN chmod +x /opt/solr/bin/solr
 EXPOSE 8983
 WORKDIR ${SOLR}
 
-CMD ["/bin/bash", "-c", "/opt/solr/bin/solr -f"]
+CMD ["/bin/bash", "-c", "/opt/solr/bin/solr -f start -p 8983 -force"]
