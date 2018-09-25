@@ -51,4 +51,4 @@ ENV CATALINA_JAVA_OPTS -Xms2G -Xmx2G -XX:MaxPermSize=300M -ea -Dcom.sun.manageme
 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false \
 -Dorg.tanukisoftware.wrapper.WrapperManager.mbean=true -Dfile.encoding=UTF-8
 
-CMD ["./usr/local/bin/startHybrisTomcat.sh"]
+CMD ["/usr/local/bin/startHybrisTomcat.sh"]
